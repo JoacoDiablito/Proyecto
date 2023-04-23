@@ -1,6 +1,6 @@
 /* Selector universal */
 *{
-    background-color: lightgreen;
+    background-color: yellow;
     font-family: Verdana;
     margin:10px;
     padding: 10px;
@@ -11,23 +11,23 @@
 
 h1{
     color: white;
-    background-color: green;
+    background-color: lightblue;
     padding: 10px;
 }
 h2{
     color: green;
-    background-color: lightgray;
+    background-color: gray;
     margin-left: 20px;
 }
 p{
-    background-color: greenyellow;
+    background-color: black;
     font-family: Arial;
     font-size: 18px;
 }
 a{
     padding: 0px;
     margin: 1px;
-    background-color: lightgreen;
+    background-color: violet;
     align-items: center;
     display: flex;
 }
@@ -43,26 +43,29 @@ img{
     /*flex-flow: column nowrap;*/
 }
     .header {
-        background: #000;
+        background: gray;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         /*flex-flow: column nowrap;*/
     } 
         .menu{
-            background: darkblue;
+            background: orangered;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             /* flex-flow: column wrap; */
             height: 100px;
             align-items: center;
+            justify-content: space-between;
         }
             .logo{
+                width: 80%;
                 background: coral;
                 flex: 1 1 auto;
                 height: 30px;
                 flex-wrap: nowrap;
+                justify-content: space-between;
             }
             .nav{
                 background: coral;
@@ -76,13 +79,13 @@ img{
                 height: 30px;
             }
         .texto-principal{
-            background: orange;
+            background: green;
         }
             h1{
-                background:skyblue;
+                background: greenyellow;
             }
     .section{
-        background: #000;
+        background: gray;
         display: flex;
     }
         .articulos{
@@ -117,7 +120,7 @@ img{
                 background:lightseagreen;
             }
     .footer {
-        background: #000;
+        background: gray;
         display: flex;
         justify-content: center;
     }
@@ -133,8 +136,8 @@ img{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }    
 
-/*De 601 a 800px*/
-@media all and (max-width: 800px){
+/*De 1367 a 1920px*/
+@media all and (max-width: 1920px){
 /*El aside debe pasar hacia abajo*/
     .section{
         flex-direction: column;
@@ -151,15 +154,15 @@ img{
     }
 }
 
-/*De 401 a 600px*/
-@media all and (max-width: 600px){
+/*De 1024 a 1366px*/
+@media all and (max-width: 1366px){
     .articulos{
         flex-direction: column;
     }
 }
 
-/*De 0 a 400px*/
-@media all and (max-width: 400px){
+/*De 0 a 1023px*/
+@media all and (max-width: 1023px){
     .aside{
         flex-direction: column;
     }
