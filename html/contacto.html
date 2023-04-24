@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Bebidas</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
     <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <title>Contacto</title>
 </head>
-
 <body>
     <div class="padre">
         <header class="header">
@@ -27,37 +25,27 @@
             </div>
         </header>
         <section class="section">
-            <div class="articulos">
-                <article class="article">
-                    <div class="bebida">
-                        <a href="#" width="40%">Vinos</a>
-                        <img src="../img/don_david_reserva_malbec.png" alt="malbec" width="73em">
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="bebida">
-                        <a href="#" width="40%">Cervezas</a>
-                        <img src="../img/barbaroja.png" alt="barbaroja" width="90em">
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="bebida">
-                        <a href="#" width="40%">Bebidas blancas</a>
-                        <img src="../img/gin.png" alt="bebidas_blancas" width="150em">
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="bebida">
-                        <a href="#" width="40%">Gaseosas</a>
-                        <img src="../img/pepsi.png" alt="gaseosas" width="110em">
-                    </div>
-                </article>
-                <nav class="navegacion"></nav>
-            </div>
-            <aside class="aside">
-                <div class="publicidad"></div>
-                <div class="publicidad"></div>
-            </aside>
+            <span class="container">  
+                <form id="contact" action="" method="post">
+                <h3>Dejenos su consulta</h3>
+                <h4>Contactenos hoy, le respondemos en 24 hs.</h4>
+                <fieldset>
+                    <input placeholder="Nombre" type="text" tabindex="1" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Email" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Teléfono" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Dejenos su mensaje..." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+                </fieldset>
+                </form>
+            </span>
         </section>
         <footer class="footer">
             <nav class="pie">
@@ -69,6 +57,6 @@
             </nav>
         </footer>
     </div>
+</div>
 </body>
-
 </html>
